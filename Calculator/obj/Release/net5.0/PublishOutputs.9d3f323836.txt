@@ -1,0 +1,5 @@
+C:\Users\mxthe\Documents\Calculator.exe
+C:\Users\mxthe\Documents\Calculator.dll
+C:\Users\mxthe\Documents\Calculator.deps.json
+C:\Users\mxthe\Documents\Calculator.runtimeconfig.json
+C:\Users\mxthe\Documents\Calculator.pdb

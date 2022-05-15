@@ -1,0 +1,5 @@
+C:\Users\mxthe\OneDrive\Documentos\Calculator.exe
+C:\Users\mxthe\OneDrive\Documentos\Calculator.dll
+C:\Users\mxthe\OneDrive\Documentos\Calculator.deps.json
+C:\Users\mxthe\OneDrive\Documentos\Calculator.runtimeconfig.json
+C:\Users\mxthe\OneDrive\Documentos\Calculator.pdb
