@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 namespace Calc
@@ -11,6 +11,9 @@ namespace Calc
             Console.WriteLine("------------------------------");
             Console.WriteLine("SEJA BEM VINDO A CALCULADORA DO MX");
             Console.WriteLine("------------------------------");
+            while (true)
+            {
+
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine("Digite seu primeiro numero: ");
             double int1_rd = double.Parse(Console.ReadLine());
@@ -37,25 +40,26 @@ namespace Calc
                 } else
                 {
                     Console.ForegroundColor = ConsoleColor.DarkBlue;
-                    Calculator.CalcSqrt(int1_rd);
+                    Console.WriteLine(Calculator.CalcSqrt(int1_rd));
                 }
             } else
             {
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
-                Calculator.CalcPow(int1_rd);
+                Console.WriteLine(Calculator.CalcPow(int1_rd));
             }
 
-            /*
-            double int2_rd = double.Parse(Console.ReadLine());
-            string arit_rd = Console.ReadLine();
-            // 1 = +
-            // 2 = -
-            // 3 = *
-            // 4 = /
-            // 5 = %
-            // 6 = Math.Pow (Potenciacao)
-            // 7 = Math.Sqrt (Raiz Quadrada)
-            */
+                /*
+                double int2_rd = double.Parse(Console.ReadLine());
+                string arit_rd = Console.ReadLine();
+                // 1 = +
+                // 2 = -
+                // 3 = *
+                // 4 = /
+                // 5 = %
+                // 6 = Math.Pow (Potenciacao)
+                // 7 = Math.Sqrt (Raiz Quadrada)
+                */
+            }
         }
         private static void Calc(int arit_rd, double int1_rd, double int2_rd)
         {
@@ -67,8 +71,8 @@ namespace Calc
                     double result = int1_rd + int2_rd;
                     Console.WriteLine("-------------------");
                     Console.WriteLine("RESULTADO: ");
-                    Console.WriteLine(result);
                     Console.ResetColor();
+                    Console.WriteLine(result);
                 }
                 if (arit_rd == 2)
                 {
@@ -98,7 +102,7 @@ namespace Calc
                     Console.WriteLine(result);
                 }
             } else {
-                throw new Exception("Ou viado");
+                throw new Exception("Não reconheço essa função!");
             }
         }
 
@@ -106,7 +110,6 @@ namespace Calc
         {
             Console.WriteLine("-------------------");
             Console.WriteLine("RESULTADO: ");
-            Console.WriteLine(Math.Sqrt(Raiz));
             return Math.Sqrt(Raiz);
         }
 
@@ -116,7 +119,6 @@ namespace Calc
                 double exp_rd = double.Parse(Console.ReadLine());
             Console.WriteLine("-------------------");
             Console.WriteLine("RESULTADO: ");
-            Console.WriteLine(Math.Pow(Base, exp_rd));
                 return Math.Pow(Base, exp_rd);
         }
     }
