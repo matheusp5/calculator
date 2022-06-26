@@ -13,6 +13,7 @@ namespace Calc
             Console.WriteLine("------------------------------");
             while (true)
             {
+                // Inicio calculadora
 
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine("Digite seu primeiro numero: ");
